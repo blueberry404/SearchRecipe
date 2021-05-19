@@ -12,6 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GTL_Assignment">
+        <activity
+            android:name=".ui.recipeDetails.RecipeDetailActivity"
+            android:label="@string/title_activity_recipe_detail"
+            android:theme="@style/Theme.GTL_Assignment.NoActionBar"></activity>
         <activity android:name=".ui.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,5 +1,6 @@
 package com.anum.gtl_assignment.ui.main
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.anum.gtl_assignment.data.model.Recipe
 import com.anum.gtl_assignment.databinding.ActivityMainBinding
+import com.anum.gtl_assignment.ui.recipeDetails.RecipeDetailActivity
 import com.anum.gtl_assignment.utils.Status
 import com.anum.gtl_assignment.utils.observeOnce
 import dagger.hilt.android.AndroidEntryPoint
@@ -57,6 +59,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun handleOnItemClick(recipe: Recipe) {
-
+        Intent(this, RecipeDetailActivity::class.java).apply {
+            putExtra("recipeID", recipe.id)
+            startActivity(this)
+        }
     }
 }
