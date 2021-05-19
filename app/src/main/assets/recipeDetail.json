@@ -1,0 +1,784 @@
+{
+  "vegetarian": false,
+  "vegan": false,
+  "glutenFree": true,
+  "dairyFree": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "veryPopular": true,
+  "sustainable": false,
+  "weightWatcherSmartPoints": 17,
+  "gaps": "no",
+  "lowFodmap": false,
+  "preparationMinutes": 15,
+  "cookingMinutes": 15,
+  "aggregateLikes": 9912,
+  "spoonacularScore": 97.0,
+  "healthScore": 38.0,
+  "creditsText": "Jen West",
+  "sourceName": "Pink When",
+  "pricePerServing": 262.25,
+  "extendedIngredients": [
+    {
+      "id": 9037,
+      "aisle": "Produce",
+      "image": "avocado.jpg",
+      "consistency": "solid",
+      "name": "avocado",
+      "nameClean": "hass avocado",
+      "original": "1 small Avocado (chopped)",
+      "originalString": "1 small Avocado (chopped)",
+      "originalName": "Avocado (chopped)",
+      "amount": 1.0,
+      "unit": "small",
+      "meta": [
+        "chopped",
+        "()"
+      ],
+      "metaInformation": [
+        "chopped",
+        "()"
+      ],
+      "measures": {
+        "us": {
+          "amount": 1.0,
+          "unitShort": "small",
+          "unitLong": "small"
+        },
+        "metric": {
+          "amount": 1.0,
+          "unitShort": "small",
+          "unitLong": "small"
+        }
+      }
+    },
+    {
+      "id": 1002030,
+      "aisle": "Spices and Seasonings",
+      "image": "pepper.jpg",
+      "consistency": "solid",
+      "name": "black pepper",
+      "nameClean": "ground black pepper",
+      "original": "½ tsp black pepper",
+      "originalString": "½ tsp black pepper",
+      "originalName": "black pepper",
+      "amount": 0.5,
+      "unit": "tsp",
+      "meta": [
+        "black"
+      ],
+      "metaInformation": [
+        "black"
+      ],
+      "measures": {
+        "us": {
+          "amount": 0.5,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        },
+        "metric": {
+          "amount": 0.5,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        }
+      }
+    },
+    {
+      "id": 16018,
+      "aisle": "Canned and Jarred",
+      "image": "black-beans.jpg",
+      "consistency": "solid",
+      "name": "canned black beans",
+      "nameClean": "canned black beans",
+      "original": "1 (15oz) can of black beans (I like the low sodium version)",
+      "originalString": "1 (15oz) can of black beans (I like the low sodium version)",
+      "originalName": "black beans (I like the low sodium version)",
+      "amount": 15.0,
+      "unit": "oz",
+      "meta": [
+        "low sodium",
+        "canned",
+        "(I like the version)"
+      ],
+      "metaInformation": [
+        "low sodium",
+        "canned",
+        "(I like the version)"
+      ],
+      "measures": {
+        "us": {
+          "amount": 15.0,
+          "unitShort": "oz",
+          "unitLong": "ounces"
+        },
+        "metric": {
+          "amount": 425.243,
+          "unitShort": "g",
+          "unitLong": "grams"
+        }
+      }
+    },
+    {
+      "id": 10011693,
+      "aisle": "Canned and Jarred",
+      "image": "tomatoes-canned.png",
+      "consistency": "solid",
+      "name": "canned tomatoes",
+      "nameClean": "canned tomatoes",
+      "original": "1 (10oz) can of tomatoes with green chilis",
+      "originalString": "1 (10oz) can of tomatoes with green chilis",
+      "originalName": "tomatoes with green chilis",
+      "amount": 10.0,
+      "unit": "oz",
+      "meta": [
+        "with green chilis",
+        "canned"
+      ],
+      "metaInformation": [
+        "with green chilis",
+        "canned"
+      ],
+      "measures": {
+        "us": {
+          "amount": 10.0,
+          "unitShort": "oz",
+          "unitLong": "ounces"
+        },
+        "metric": {
+          "amount": 283.495,
+          "unitShort": "g",
+          "unitLong": "grams"
+        }
+      }
+    },
+    {
+      "id": 2009,
+      "aisle": "Spices and Seasonings",
+      "image": "chili-powder.jpg",
+      "consistency": "solid",
+      "name": "chili powder",
+      "nameClean": "chili powder",
+      "original": "½ tsp chili powder",
+      "originalString": "½ tsp chili powder",
+      "originalName": "chili powder",
+      "amount": 0.5,
+      "unit": "tsp",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 0.5,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        },
+        "metric": {
+          "amount": 0.5,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        }
+      }
+    },
+    {
+      "id": 20137,
+      "aisle": "Pasta and Rice;Health Foods",
+      "image": "cooked-quinoa.png",
+      "consistency": "solid",
+      "name": "cooked quinoa",
+      "nameClean": "cooked quinoa",
+      "original": "1 cup cooked quinoa",
+      "originalString": "1 cup cooked quinoa",
+      "originalName": "cooked quinoa",
+      "amount": 1.0,
+      "unit": "cup",
+      "meta": [
+        "cooked"
+      ],
+      "metaInformation": [
+        "cooked"
+      ],
+      "measures": {
+        "us": {
+          "amount": 1.0,
+          "unitShort": "cup",
+          "unitLong": "cup"
+        },
+        "metric": {
+          "amount": 236.588,
+          "unitShort": "ml",
+          "unitLong": "milliliters"
+        }
+      }
+    },
+    {
+      "id": 1002014,
+      "aisle": "Spices and Seasonings",
+      "image": "ground-cumin.jpg",
+      "consistency": "solid",
+      "name": "cumin",
+      "nameClean": "cumin",
+      "original": "½ tsp cumin",
+      "originalString": "½ tsp cumin",
+      "originalName": "cumin",
+      "amount": 0.5,
+      "unit": "tsp",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 0.5,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        },
+        "metric": {
+          "amount": 0.5,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        }
+      }
+    },
+    {
+      "id": 6599,
+      "aisle": "Pasta and Rice;Ethnic Foods",
+      "image": "harissa.jpg",
+      "consistency": "solid",
+      "name": "enchilada sauce",
+      "nameClean": "red enchilada sauce",
+      "original": "1 (10oz) can of verde enchilada sauce",
+      "originalString": "1 (10oz) can of verde enchilada sauce",
+      "originalName": "verde enchilada sauce",
+      "amount": 10.0,
+      "unit": "oz",
+      "meta": [
+        "canned"
+      ],
+      "metaInformation": [
+        "canned"
+      ],
+      "measures": {
+        "us": {
+          "amount": 10.0,
+          "unitShort": "oz",
+          "unitLong": "ounces"
+        },
+        "metric": {
+          "amount": 283.495,
+          "unitShort": "g",
+          "unitLong": "grams"
+        }
+      }
+    },
+    {
+      "id": 11165,
+      "aisle": "Produce;Spices and Seasonings",
+      "image": "cilantro.png",
+      "consistency": "solid",
+      "name": "fresh cilantro",
+      "nameClean": "fresh cilantro",
+      "original": "fresh cilantro (2Tbsp and 2 tsp separated)",
+      "originalString": "fresh cilantro (2Tbsp and 2 tsp separated)",
+      "originalName": "fresh cilantro and 2 tsp separated)",
+      "amount": 2.0,
+      "unit": "Tbsp",
+      "meta": [
+        "fresh",
+        "separated"
+      ],
+      "metaInformation": [
+        "fresh",
+        "separated"
+      ],
+      "measures": {
+        "us": {
+          "amount": 2.0,
+          "unitShort": "Tbsps",
+          "unitLong": "Tbsps"
+        },
+        "metric": {
+          "amount": 2.0,
+          "unitShort": "Tbsps",
+          "unitLong": "Tbsps"
+        }
+      }
+    },
+    {
+      "id": 11291,
+      "aisle": "Produce",
+      "image": "spring-onions.jpg",
+      "consistency": "solid",
+      "name": "green onion tops",
+      "nameClean": "spring onions",
+      "original": "green onion tops (chopped)",
+      "originalString": "green onion tops (chopped)",
+      "originalName": "green onion tops (chopped)",
+      "amount": 4.0,
+      "unit": "servings",
+      "meta": [
+        "chopped",
+        "()"
+      ],
+      "metaInformation": [
+        "chopped",
+        "()"
+      ],
+      "measures": {
+        "us": {
+          "amount": 4.0,
+          "unitShort": "servings",
+          "unitLong": "servings"
+        },
+        "metric": {
+          "amount": 4.0,
+          "unitShort": "servings",
+          "unitLong": "servings"
+        }
+      }
+    },
+    {
+      "id": 10211529,
+      "aisle": "Produce",
+      "image": "roma-tomatoes.png",
+      "consistency": "solid",
+      "name": "roma tomato",
+      "nameClean": "roma tomato",
+      "original": "1 Roma tomato (chopped)",
+      "originalString": "1 Roma tomato (chopped)",
+      "originalName": "Roma tomato (chopped)",
+      "amount": 1.0,
+      "unit": "",
+      "meta": [
+        "chopped",
+        "()"
+      ],
+      "metaInformation": [
+        "chopped",
+        "()"
+      ],
+      "measures": {
+        "us": {
+          "amount": 1.0,
+          "unitShort": "",
+          "unitLong": ""
+        },
+        "metric": {
+          "amount": 1.0,
+          "unitShort": "",
+          "unitLong": ""
+        }
+      }
+    },
+    {
+      "id": 2047,
+      "aisle": "Spices and Seasonings",
+      "image": "salt.jpg",
+      "consistency": "solid",
+      "name": "salt",
+      "nameClean": "salt",
+      "original": "salt to taste",
+      "originalString": "salt to taste",
+      "originalName": "salt to taste",
+      "amount": 4.0,
+      "unit": "servings",
+      "meta": [
+        "to taste"
+      ],
+      "metaInformation": [
+        "to taste"
+      ],
+      "measures": {
+        "us": {
+          "amount": 4.0,
+          "unitShort": "servings",
+          "unitLong": "servings"
+        },
+        "metric": {
+          "amount": 4.0,
+          "unitShort": "servings",
+          "unitLong": "servings"
+        }
+      }
+    },
+    {
+      "id": 1011026,
+      "aisle": "Cheese",
+      "image": "cheddar-cheese.png",
+      "consistency": "solid",
+      "name": "shredded cheese",
+      "nameClean": "shredded cheese",
+      "original": "2 cups of shredded cheese (my favorite is the Kraft Mexican 4 cheese blend and one bag equals two cups!)",
+      "originalString": "2 cups of shredded cheese (my favorite is the Kraft Mexican 4 cheese blend and one bag equals two cups!)",
+      "originalName": "shredded cheese (my favorite is the Kraft Mexican 4 cheese blend and one bag equals two cups!)",
+      "amount": 2.0,
+      "unit": "cups",
+      "meta": [
+        "shredded",
+        "kraft",
+        "(my favorite is the Mexican 4 cheese blend and one bag equals two cups!)"
+      ],
+      "metaInformation": [
+        "shredded",
+        "kraft",
+        "(my favorite is the Mexican 4 cheese blend and one bag equals two cups!)"
+      ],
+      "measures": {
+        "us": {
+          "amount": 2.0,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 473.176,
+          "unitShort": "ml",
+          "unitLong": "milliliters"
+        }
+      }
+    },
+    {
+      "id": 1055062,
+      "aisle": "Meat",
+      "image": "chicken-breasts.png",
+      "consistency": "solid",
+      "name": "skinless boneless chicken breast",
+      "nameClean": "boneless skinless chicken breast",
+      "original": "1 boneless skinless chicken breast (boiled and shredded)",
+      "originalString": "1 boneless skinless chicken breast (boiled and shredded)",
+      "originalName": "boneless skinless chicken breast (boiled and shredded)",
+      "amount": 1.0,
+      "unit": "",
+      "meta": [
+        "shredded",
+        "boneless",
+        "skinless",
+        "boiled",
+        "( and )"
+      ],
+      "metaInformation": [
+        "shredded",
+        "boneless",
+        "skinless",
+        "boiled",
+        "( and )"
+      ],
+      "measures": {
+        "us": {
+          "amount": 1.0,
+          "unitShort": "",
+          "unitLong": ""
+        },
+        "metric": {
+          "amount": 1.0,
+          "unitShort": "",
+          "unitLong": ""
+        }
+      }
+    },
+    {
+      "id": 11168,
+      "aisle": "Produce",
+      "image": "corn.png",
+      "consistency": "solid",
+      "name": "sweet corn",
+      "nameClean": "corn",
+      "original": "1 (15oz) can of sweet corn (you are only going to use half of the can)",
+      "originalString": "1 (15oz) can of sweet corn (you are only going to use half of the can)",
+      "originalName": "sweet corn (you are only going to use half of the can)",
+      "amount": 15.0,
+      "unit": "oz",
+      "meta": [
+        "sweet",
+        "canned",
+        "(you are only going to use half of the can)"
+      ],
+      "metaInformation": [
+        "sweet",
+        "canned",
+        "(you are only going to use half of the can)"
+      ],
+      "measures": {
+        "us": {
+          "amount": 15.0,
+          "unitShort": "oz",
+          "unitLong": "ounces"
+        },
+        "metric": {
+          "amount": 425.243,
+          "unitShort": "g",
+          "unitLong": "grams"
+        }
+      }
+    },
+    {
+      "id": 2032,
+      "aisle": "Spices and Seasonings",
+      "image": "white-pepper.png",
+      "consistency": "solid",
+      "name": "white pepper",
+      "nameClean": "ground white pepper",
+      "original": "½ tsp white pepper",
+      "originalString": "½ tsp white pepper",
+      "originalName": "white pepper",
+      "amount": 0.5,
+      "unit": "tsp",
+      "meta": [
+        "white"
+      ],
+      "metaInformation": [
+        "white"
+      ],
+      "measures": {
+        "us": {
+          "amount": 0.5,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        },
+        "metric": {
+          "amount": 0.5,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        }
+      }
+    }
+  ],
+  "id": 715421,
+  "title": "Cheesy Chicken Enchilada Quinoa Casserole",
+  "readyInMinutes": 30,
+  "servings": 4,
+  "sourceUrl": "http://www.pinkwhen.com/cheesy-chicken-enchilada-quinoa-casserole/",
+  "image": "https://spoonacular.com/recipeImages/715421-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "Cheesy Chicken Enchilada Quinoa Casserole might be just the main course you are searching for. This gluten free recipe serves 4 and costs <b>$2.62 per serving</b>. One serving contains <b>594 calories</b>, <b>34g of protein</b>, and <b>24g of fat</b>. <b>Autumn</b> will be even more special with this recipe. 9912 people have tried and liked this recipe. From preparation to the plate, this recipe takes about <b>30 minutes</b>. Head to the store and pick up chili powder, cumin, verde enchilada sauce, and a few other things to make it today. To use up the avocado you could follow this main course with the <a href=\"https://spoonacular.com/recipes/chocolate-avocado-mousse-quick-dark-chocolate-avocado-mousse-486646\">chocolate avocado mousse | quick dark chocolate avocado mousse</a> as a dessert. This recipe is typical of Mexican cuisine. All things considered, we decided this recipe <b>deserves a spoonacular score of 98%</b>. This score is excellent. Try <a href=\"https://spoonacular.com/recipes/cheesy-chicken-enchilada-casserole-163123\">Cheesy Chicken Enchilada Casserole</a>, <a href=\"https://spoonacular.com/recipes/quinoa-chicken-enchilada-casserole-622079\">Quinoa Chicken Enchilada Casserole</a>, and <a href=\"https://spoonacular.com/recipes/the-heartbreak-of-success-and-a-healthy-easy-and-cheesy-chicken-and-brown-rice-enchilada-casserole-575434\">The Heartbreak of Success, and A Healthy, Easy, and Cheesy Chicken and Brown Rice Enchilada Casserole</a> for similar recipes.",
+  "cuisines": [
+    "Mexican"
+  ],
+  "dishTypes": [
+    "lunch",
+    "main course",
+    "main dish",
+    "dinner"
+  ],
+  "diets": [
+    "gluten free"
+  ],
+  "occasions": [
+    "fall",
+    "winter"
+  ],
+  "winePairing": {
+    "pairedWines": [
+      "pinot noir",
+      "riesling",
+      "sparkling rose"
+    ],
+    "pairingText": "Mexican on the menu? Try pairing with Pinot Noir, Riesling, and Sparkling rosé. Acidic white wines like riesling or low-tannin reds like pinot noir can work well with Mexican dishes. Sparkling rosé is a safe pairing too. One wine you could try is White Oak Russian River Pinot Noir. It has 4.5 out of 5 stars and a bottle costs about 20 dollars.",
+    "productMatches": [
+      {
+        "id": 448471,
+        "title": "White Oak Russian River Pinot Noir",
+        "description": "A delicate Pinot Noir with cranberry, pomegranate and a slight dusty, floral note on the nose. Leads to a soft entry on the palette, followed by flavors of boysenberry, plum and leather, supported by subtle and well integrated oak. This wine lingers at the finish with velvety tannins.",
+        "price": "$19.99",
+        "imageUrl": "https://spoonacular.com/productImages/448471-312x231.jpg",
+        "averageRating": 0.9,
+        "ratingCount": 5.0,
+        "score": 0.8375,
+        "link": "https://click.linksynergy.com/deeplink?id=*QCiIS6t4gA&mid=2025&murl=https%3A%2F%2Fwww.wine.com%2Fproduct%2Fwhite-oak-russian-river-pinot-noir-2013%2F161568"
+      }
+    ]
+  },
+  "instructions": "To get started, heat your oven to 350 and prepare an 8x8 baking dish. Cook the quinoa according to the instructions. If you haven't already, boil and shred your chicken breast.In a medium sized mixing bowl add 2 Tbsp cilantro, 1 cup shredded cheese, quinoa, tomatoes with chilis, black beans, half of the can of sweet corn, verde enchilada sauce, cumin, chili powder, white pepper, black pepper, and salt to taste. Mix everything well, and then pour into the 8 x8 baking dish. Cover with the last cup of cheese and then bake in the oven for 15 minutes.Remove from oven and allow to cool for 5 minutes. Then top with chopped Roma tomato, chopped avocado, green onion tops, and remaining 2 tsp of cilantro. Serve immediately.",
+  "analyzedInstructions": [
+    {
+      "name": "",
+      "steps": [
+        {
+          "number": 1,
+          "step": "To get started, heat your oven to 350 and prepare an 8x8 baking dish. Cook the quinoa according to the instructions. If you haven't already, boil and shred your chicken breast.In a medium sized mixing bowl add 2 Tbsp cilantro, 1 cup shredded cheese, quinoa, tomatoes with chilis, black beans, half of the can of sweet corn, verde enchilada sauce, cumin, chili powder, white pepper, black pepper, and salt to taste.",
+          "ingredients": [
+            {
+              "id": 6599,
+              "name": "enchilada sauce",
+              "localizedName": "enchilada sauce",
+              "image": "harissa.jpg"
+            },
+            {
+              "id": 1011026,
+              "name": "shredded cheese",
+              "localizedName": "shredded cheese",
+              "image": "cheddar-cheese.png"
+            },
+            {
+              "id": 5062,
+              "name": "chicken breast",
+              "localizedName": "chicken breast",
+              "image": "chicken-breasts.png"
+            },
+            {
+              "id": 1002030,
+              "name": "black pepper",
+              "localizedName": "black pepper",
+              "image": "pepper.jpg"
+            },
+            {
+              "id": 2009,
+              "name": "chili powder",
+              "localizedName": "chili powder",
+              "image": "chili-powder.jpg"
+            },
+            {
+              "id": 2032,
+              "name": "white pepper",
+              "localizedName": "white pepper",
+              "image": "white-pepper.png"
+            },
+            {
+              "id": 16015,
+              "name": "black beans",
+              "localizedName": "black beans",
+              "image": "black-beans.jpg"
+            },
+            {
+              "id": 10111168,
+              "name": "sweet corn",
+              "localizedName": "sweet corn",
+              "image": "corn.png"
+            },
+            {
+              "id": 11165,
+              "name": "cilantro",
+              "localizedName": "cilantro",
+              "image": "cilantro.png"
+            },
+            {
+              "id": 11529,
+              "name": "tomato",
+              "localizedName": "tomato",
+              "image": "tomato.png"
+            },
+            {
+              "id": 11819,
+              "name": "chili pepper",
+              "localizedName": "chili pepper",
+              "image": "red-chili.jpg"
+            },
+            {
+              "id": 20035,
+              "name": "quinoa",
+              "localizedName": "quinoa",
+              "image": "uncooked-quinoa.png"
+            },
+            {
+              "id": 1002014,
+              "name": "cumin",
+              "localizedName": "cumin",
+              "image": "ground-cumin.jpg"
+            },
+            {
+              "id": 2047,
+              "name": "salt",
+              "localizedName": "salt",
+              "image": "salt.jpg"
+            }
+          ],
+          "equipment": [
+            {
+              "id": 404646,
+              "name": "baking pan",
+              "localizedName": "baking pan",
+              "image": "roasting-pan.jpg"
+            },
+            {
+              "id": 405907,
+              "name": "mixing bowl",
+              "localizedName": "mixing bowl",
+              "image": "mixing-bowl.jpg"
+            },
+            {
+              "id": 404784,
+              "name": "oven",
+              "localizedName": "oven",
+              "image": "oven.jpg"
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "step": "Mix everything well, and then pour into the 8 x8 baking dish. Cover with the last cup of cheese and then bake in the oven for 15 minutes.",
+          "ingredients": [
+            {
+              "id": 1041009,
+              "name": "cheese",
+              "localizedName": "cheese",
+              "image": "cheddar-cheese.png"
+            }
+          ],
+          "equipment": [
+            {
+              "id": 404646,
+              "name": "baking pan",
+              "localizedName": "baking pan",
+              "image": "roasting-pan.jpg"
+            },
+            {
+              "id": 404784,
+              "name": "oven",
+              "localizedName": "oven",
+              "image": "oven.jpg"
+            }
+          ],
+          "length": {
+            "number": 15,
+            "unit": "minutes"
+          }
+        },
+        {
+          "number": 3,
+          "step": "Remove from oven and allow to cool for 5 minutes. Then top with chopped Roma tomato, chopped avocado, green onion tops, and remaining 2 tsp of cilantro.",
+          "ingredients": [
+            {
+              "id": 11291,
+              "name": "green onions",
+              "localizedName": "green onions",
+              "image": "spring-onions.jpg"
+            },
+            {
+              "id": 10211529,
+              "name": "roma tomato",
+              "localizedName": "roma tomato",
+              "image": "roma-tomatoes.png"
+            },
+            {
+              "id": 11165,
+              "name": "cilantro",
+              "localizedName": "cilantro",
+              "image": "cilantro.png"
+            },
+            {
+              "id": 9037,
+              "name": "avocado",
+              "localizedName": "avocado",
+              "image": "avocado.jpg"
+            }
+          ],
+          "equipment": [
+            {
+              "id": 404784,
+              "name": "oven",
+              "localizedName": "oven",
+              "image": "oven.jpg"
+            }
+          ],
+          "length": {
+            "number": 5,
+            "unit": "minutes"
+          }
+        },
+        {
+          "number": 4,
+          "step": "Serve immediately.",
+          "ingredients": [],
+          "equipment": []
+        }
+      ]
+    }
+  ],
+  "originalId": null,
+  "spoonacularSourceUrl": "https://spoonacular.com/cheesy-chicken-enchilada-quinoa-casserole-715421"
+}

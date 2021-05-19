@@ -1,5 +1,7 @@
 package com.anum.gtl_assignment.data.repository.recipe
 
+import android.app.Application
+import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.anum.gtl_assignment.data.model.Recipe
@@ -7,11 +9,13 @@ import com.anum.gtl_assignment.data.model.RecipeInformation
 import com.anum.gtl_assignment.data.model.Recipes
 import com.anum.gtl_assignment.utils.Resource
 import com.anum.gtl_assignment.utils.Status
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.withContext
+import com.anum.gtl_assignment.utils.loadJSONFromAssets
+import com.google.gson.Gson
+import dagger.hilt.android.qualifiers.ApplicationContext
+import javax.inject.Inject
 
-class RecipeRepositoryMock: RecipeRepository {
+class RecipeRepositoryMock @Inject constructor(@ApplicationContext private val context: Context,
+                                               private val gson: Gson): RecipeRepository {
 
     override suspend fun getRecipes(query: String, apiKey: String): LiveData<Resource<Recipes>> {
         var data = MutableLiveData<Resource<Recipes>>()
@@ -46,9 +50,9 @@ class RecipeRepositoryMock: RecipeRepository {
     override suspend fun getRecipeDetails(
         recipeId: Long,
         apiKey: String
-    ): LiveData<Resource<RecipeInformation>> {
-        TODO("Not yet implemented")
+    ): Resource<RecipeInformation> {
+        val data = context.loadJSONFromAssets("recipeDetail.json")
+        val info = gson.fromJson<RecipeInformation>(data, RecipeInformation::class.java)
+        return Resource(Status.SUCCESS, info, null)
     }
-
-
 }

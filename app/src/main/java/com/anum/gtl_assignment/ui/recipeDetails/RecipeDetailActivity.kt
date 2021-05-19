@@ -1,21 +1,21 @@
 package com.anum.gtl_assignment.ui.recipeDetails
 
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.tabs.TabLayout
-import androidx.viewpager.widget.ViewPager
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
-import com.anum.gtl_assignment.R
 import com.anum.gtl_assignment.databinding.ActivityRecipeDetailBinding
-import com.anum.gtl_assignment.ui.recipeDetails.ui.main.PlaceholderFragment
+import com.anum.gtl_assignment.ui.recipeDetails.ui.main.IngredientsFragment
+import com.anum.gtl_assignment.ui.recipeDetails.ui.main.InstructionsFragment
 import com.anum.gtl_assignment.ui.recipeDetails.ui.main.SectionsPagerAdapter
+import com.anum.gtl_assignment.ui.recipeDetails.ui.main.SummaryFragment
+import com.google.android.material.tabs.TabLayout
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class RecipeDetailActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRecipeDetailBinding
+    private val viewModel: RecipeDetailViewModel by viewModels()
     private var recipeID = 0L
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,12 +27,15 @@ class RecipeDetailActivity : AppCompatActivity() {
     }
 
     private fun setupUI() {
-        val sectionsPagerAdapter = SectionsPagerAdapter(supportFragmentManager, lifecycle,
-            listOf(
-                PlaceholderFragment.newInstance(),
-                PlaceholderFragment.newInstance(),
-                PlaceholderFragment.newInstance()
-            ))
+        val sectionsPagerAdapter =
+            SectionsPagerAdapter(
+                supportFragmentManager, lifecycle,
+                listOf(
+                    SummaryFragment.newInstance(),
+                    InstructionsFragment.newInstance(),
+                    IngredientsFragment.newInstance()
+                )
+            )
         binding.viewPager.adapter = sectionsPagerAdapter
 
         binding.tabs.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
@@ -51,5 +54,6 @@ class RecipeDetailActivity : AppCompatActivity() {
 
     private fun fetchDetails() {
         recipeID = intent?.getLongExtra("recipeID", 0)?: kotlin.run { 0L }
+        viewModel.fetchRecipe(recipeID)
     }
 }

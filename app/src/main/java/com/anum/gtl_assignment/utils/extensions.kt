@@ -1,5 +1,6 @@
 package com.anum.gtl_assignment.utils
 
+import android.content.Context
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
@@ -11,4 +12,10 @@ fun <T> LiveData<T>.observeOnce(owner: LifecycleOwner, observer: (T) -> Unit) {
             observer(value)
         }
     })
+}
+
+fun Context.loadJSONFromAssets(fileName: String): String {
+    return applicationContext.assets.open(fileName).bufferedReader().use { reader ->
+        reader.readText()
+    }
 }

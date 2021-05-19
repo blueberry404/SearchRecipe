@@ -1,12 +1,14 @@
 package com.anum.gtl_assignment.di
 
+import android.content.Context
 import com.anum.gtl_assignment.api.RecipeService
 import com.anum.gtl_assignment.data.repository.recipe.RecipeRepository
 import com.anum.gtl_assignment.data.repository.recipe.RecipeRepositoryImpl
-import com.anum.gtl_assignment.data.repository.recipe.RecipeRepositoryMock
+import com.google.gson.Gson
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
@@ -15,9 +17,11 @@ import javax.inject.Singleton
 object AppModule {
 
     @Singleton
-    @Provides fun provideRecipeRepository(recipeService: RecipeService): RecipeRepository =
-//        RecipeRepositoryImpl(recipeService)
-        RecipeRepositoryMock()
+    @Provides fun provideRecipeRepository(recipeService: RecipeService,
+                                          @ApplicationContext context: Context,
+                                          gson: Gson): RecipeRepository =
+        RecipeRepositoryImpl(recipeService)
+//        RecipeRepositoryMock(context, gson)
 
     @ApiKey
     @Singleton

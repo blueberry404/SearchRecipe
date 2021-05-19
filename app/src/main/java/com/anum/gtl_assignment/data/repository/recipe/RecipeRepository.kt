@@ -9,5 +9,5 @@ interface RecipeRepository {
 
     suspend fun getRecipes(query: String, apiKey: String): LiveData<Resource<Recipes>>
     suspend fun getRecipesWithout(query: String, apiKey: String): Resource<Recipes>
-    suspend fun getRecipeDetails(recipeId: Long, apiKey: String): LiveData<Resource<RecipeInformation>>
+    suspend fun getRecipeDetails(recipeId: Long, apiKey: String): Resource<RecipeInformation>
 }

@@ -58,12 +58,19 @@ class RecipeRepositoryImpl @Inject constructor(private val recipeService: Recipe
     override suspend fun getRecipeDetails(
         recipeId: Long,
         apiKey: String
-    ): LiveData<Resource<RecipeInformation>> {
-//        withContext(Dispatchers.IO) {
-//            return@withContext recipeService.getRecipeDetails(recipeId, apiKey)
-//        }
-        var data = MutableLiveData<Resource<RecipeInformation>>()
-        data.value = Resource(Status.LOADING, null, null)
-        return data
-    }
+    ): Resource<RecipeInformation> =
+        withContext(Dispatchers.IO) {
+            try {
+                val recipeInfo = recipeService.getRecipeDetails(recipeId, apiKey)
+                if(recipeInfo != null) {
+                    return@withContext Resource(Status.SUCCESS, recipeInfo, null)
+                }
+                else {
+                    return@withContext Resource(Status.ERROR, null, "An error occured")
+                }
+            }
+            catch(exc: Exception) {
+                return@withContext Resource(Status.ERROR, null, exc.message)
+            }
+        }
 }

@@ -18,5 +18,5 @@ interface RecipeService {
     suspend fun getRecipeDetails(
         @Path("recipeID") recipeID: Long,
         @Query("apiKey") apiKey: String
-    ): RecipeInformation
+    ): RecipeInformation?
 }
