@@ -3,6 +3,7 @@ package com.anum.gtl_assignment.di
 import com.anum.gtl_assignment.api.RecipeService
 import com.anum.gtl_assignment.data.repository.recipe.RecipeRepository
 import com.anum.gtl_assignment.data.repository.recipe.RecipeRepositoryImpl
+import com.anum.gtl_assignment.data.repository.recipe.RecipeRepositoryMock
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -15,7 +16,8 @@ object AppModule {
 
     @Singleton
     @Provides fun provideRecipeRepository(recipeService: RecipeService): RecipeRepository =
-        RecipeRepositoryImpl(recipeService)
+//        RecipeRepositoryImpl(recipeService)
+        RecipeRepositoryMock()
 
     @ApiKey
     @Singleton
