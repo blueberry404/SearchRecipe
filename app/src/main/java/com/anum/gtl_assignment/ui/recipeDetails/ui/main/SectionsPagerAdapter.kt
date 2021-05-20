@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
+//TODO: To be injected via Hilt
 class SectionsPagerAdapter(fm: FragmentManager,
                            lifecycle: Lifecycle, private val fragmentsList: List<Fragment>)
     : FragmentStateAdapter(fm, lifecycle) {

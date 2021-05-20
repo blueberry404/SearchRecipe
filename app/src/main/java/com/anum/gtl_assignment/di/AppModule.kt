@@ -2,8 +2,10 @@ package com.anum.gtl_assignment.di
 
 import android.content.Context
 import com.anum.gtl_assignment.api.RecipeService
+import com.anum.gtl_assignment.data.db.RecipeDao
 import com.anum.gtl_assignment.data.repository.recipe.RecipeRepository
 import com.anum.gtl_assignment.data.repository.recipe.RecipeRepositoryImpl
+import com.anum.gtl_assignment.data.repository.recipe.RecipeRepositoryMock
 import com.google.gson.Gson
 import dagger.Module
 import dagger.Provides
@@ -19,8 +21,9 @@ object AppModule {
     @Singleton
     @Provides fun provideRecipeRepository(recipeService: RecipeService,
                                           @ApplicationContext context: Context,
+                                          recipeDao: RecipeDao,
                                           gson: Gson): RecipeRepository =
-        RecipeRepositoryImpl(recipeService)
+        RecipeRepositoryImpl(recipeService, recipeDao)
 //        RecipeRepositoryMock(context, gson)
 
     @ApiKey

@@ -3,14 +3,18 @@ package com.anum.gtl_assignment.ui.main
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
+import androidx.lifecycle.observe
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.anum.gtl_assignment.data.model.Recipe
 import com.anum.gtl_assignment.databinding.ActivityMainBinding
 import com.anum.gtl_assignment.ui.recipeDetails.RecipeDetailActivity
 import com.anum.gtl_assignment.utils.Status
+import com.anum.gtl_assignment.utils.hideKeyboard
 import com.anum.gtl_assignment.utils.observeOnce
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
@@ -39,10 +43,15 @@ class MainActivity : AppCompatActivity() {
         adapter.onClick = {
             handleOnItemClick(it)
         }
+
+        binding.btnSearch.setOnClickListener {
+            hideKeyboard(it)
+            mainViewModel.searchRecipe(binding.editSearch.text.toString())
+        }
     }
 
     private fun setupViewModel() {
-        mainViewModel.recipeListObservable().observeOnce(this) {
+        mainViewModel.recipeListObservable().observe(this, Observer {
             when(it.status) {
                 Status.SUCCESS -> {
                     binding.progressBar.visibility = View.GONE
@@ -53,9 +62,11 @@ class MainActivity : AppCompatActivity() {
                 }
                 Status.ERROR -> {
                     binding.progressBar.visibility = View.GONE
+                    Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
                 }
             }
-        }
+        })
+
     }
 
     private fun handleOnItemClick(recipe: Recipe) {

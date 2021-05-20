@@ -31,12 +31,12 @@ class MainViewModel @Inject constructor(
         searchRecipe()
     }
 
-    private fun searchRecipe(search: String = "") {
+    fun searchRecipe(search: String = "") {
         _searchString.value = search
         try {
 
             viewModelScope.launch {
-                _recipes.value = recipeRepository.getRecipesWithout(search, apiKey)
+                _recipes.value = recipeRepository.getRecipes(search, apiKey)
             }
         } catch (ex: Exception) {
             _recipes.value = Resource(Status.ERROR, null, ex.message)

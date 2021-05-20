@@ -1,129 +1,33 @@
 package com.anum.gtl_assignment.data.model
 
+import androidx.room.Entity
+import androidx.room.Ignore
+import androidx.room.PrimaryKey
+import java.util.*
+
 data class Recipes(var results: List<Recipe>? = null)
 
 data class Recipe(var id: Long = 0, var title: String = "N/A", var image: String? = null)
 
+@Entity
 data class RecipeInformation(
-    val aggregateLikes: Int,
-    val analyzedInstructions: List<AnalyzedInstruction>,
-    val cheap: Boolean,
-    val cookingMinutes: Int,
-    val creditsText: String,
-    val cuisines: List<String>,
-    val dairyFree: Boolean,
-    val diets: List<String>,
-    val dishTypes: List<String>,
-    val extendedIngredients: List<ExtendedIngredient>,
-    val gaps: String,
-    val glutenFree: Boolean,
-    val healthScore: Double,
-    val id: Int,
-    val image: String,
-    val imageType: String,
-    val instructions: String,
-    val lowFodmap: Boolean,
-    val occasions: List<String>,
-    val originalId: Any,
-    val preparationMinutes: Int,
-    val pricePerServing: Double,
-    val readyInMinutes: Int,
-    val servings: Int,
-    val sourceName: String,
-    val sourceUrl: String,
-    val spoonacularScore: Double,
-    val spoonacularSourceUrl: String,
-    val summary: String,
-    val sustainable: Boolean,
-    val title: String,
-    val vegan: Boolean,
-    val vegetarian: Boolean,
-    val veryHealthy: Boolean,
-    val veryPopular: Boolean,
-    val weightWatcherSmartPoints: Int,
-    val winePairing: WinePairing
-)
-
-data class AnalyzedInstruction(
-    val name: String,
-    val steps: List<Step>
-)
-
-data class ExtendedIngredient(
-    val aisle: String,
-    val amount: Double,
-    val consistency: String,
-    val id: Int,
-    val image: String,
-    val measures: Measures,
-    val meta: List<String>,
-    val metaInformation: List<String>,
-    val name: String,
-    val nameClean: String,
-    val original: String,
-    val originalName: String,
-    val originalString: String,
-    val unit: String
-)
-
-data class WinePairing(
-    val pairedWines: List<String>,
-    val pairingText: String,
-    val productMatches: List<ProductMatche>
-)
-
-data class Step(
-    val equipment: List<Equipment>,
-    val ingredients: List<Ingredient>,
-    val length: Length,
-    val number: Int,
-    val step: String
-)
-
-data class Equipment(
-    val id: Int,
-    val image: String,
-    val localizedName: String,
-    val name: String
-)
-
-data class Ingredient(
-    val id: Int,
-    val image: String,
-    val localizedName: String,
-    val name: String
-)
-
-data class Length(
-    val number: Int,
-    val unit: String
-)
-
-data class Measures(
-    val metric: Metric,
-    val us: Us
-)
-
-data class Metric(
-    val amount: Double,
-    val unitLong: String,
-    val unitShort: String
-)
-
-data class Us(
-    val amount: Double,
-    val unitLong: String,
-    val unitShort: String
-)
-
-data class ProductMatche(
-    val averageRating: Double,
-    val description: String,
-    val id: Int,
-    val imageUrl: String,
-    val link: String,
-    val price: String,
-    val ratingCount: Double,
-    val score: Double,
-    val title: String
+    @PrimaryKey val id: Long = 0,
+    val image: String? = null,
+    val instructions: String? = null,
+    val preparationMinutes: Int? = null,
+    val pricePerServing: Double? = null,
+    val readyInMinutes: Int? = null,
+    val servings: Int? = null,
+    val sourceName: String? = null,
+    val sourceUrl: String? = null,
+    val spoonacularScore: Double? = null,
+    val spoonacularSourceUrl: String? = null,
+    val summary: String? = null,
+    val title: String? = null,
+    val vegan: Boolean? = null,
+    val vegetarian: Boolean? = null,
+    val veryHealthy: Boolean? = null,
+    val veryPopular: Boolean? = null,
+    val weightWatcherSmartPoints: Int? = null,
+    val dateCreated: Date = Date(),
 )

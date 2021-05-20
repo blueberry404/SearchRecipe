@@ -1,6 +1,5 @@
 package com.anum.gtl_assignment.data.repository.recipe
 
-import android.app.Application
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -17,26 +16,7 @@ import javax.inject.Inject
 class RecipeRepositoryMock @Inject constructor(@ApplicationContext private val context: Context,
                                                private val gson: Gson): RecipeRepository {
 
-    override suspend fun getRecipes(query: String, apiKey: String): LiveData<Resource<Recipes>> {
-        var data = MutableLiveData<Resource<Recipes>>()
-        data.value = Resource(Status.LOADING, null, null)
-
-//        withContext(Dispatchers.Main) {
-//            delay(3000L)
-            val recipe = Recipes(listOf(
-                Recipe(1, "Easy Homemade Rice and Beans", "easy-homemade-rice-and-beans-716627.jpg"),
-                Recipe(2, "Spicy Black-Eyed Pea Curry with Swiss Chard and Roasted Eggplant",
-                    "spicy-black-eyed-pea-curry-with-swiss-chard-and-roasted-eggplant-798400.jpg"),
-                Recipe(3, "Cheesy Chicken Enchilada Quinoa Casserole",
-                    "cheesy-chicken-enchilada-quinoa-casserole-715421.jpg")
-            ))
-            data.value = Resource(Status.SUCCESS, recipe, null)
-//        }
-
-        return data
-    }
-
-    override suspend fun getRecipesWithout(query: String, apiKey: String): Resource<Recipes> {
+    override suspend fun getRecipes(query: String, apiKey: String): Resource<Recipes> {
         val recipe = Recipes(listOf(
             Recipe(1, "Easy Homemade Rice and Beans", "easy-homemade-rice-and-beans-716627.jpg"),
             Recipe(2, "Spicy Black-Eyed Pea Curry with Swiss Chard and Roasted Eggplant",

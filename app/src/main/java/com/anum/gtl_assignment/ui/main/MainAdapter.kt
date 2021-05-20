@@ -27,6 +27,7 @@ class MainAdapter: RecyclerView.Adapter<MainAdapter.MainViewHolder>() {
     }
 
     fun addData(items: List<Recipe>) {
+        list.clear()
         list.addAll(items)
         notifyDataSetChanged()
     }

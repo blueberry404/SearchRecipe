@@ -12,7 +12,7 @@ interface RecipeService {
     suspend fun getRecipes(
         @Query("query") query: String,
         @Query("apiKey") apiKey: String
-    ): Recipes
+    ): Recipes?
 
     @GET("recipes/{recipeID}/information")
     suspend fun getRecipeDetails(

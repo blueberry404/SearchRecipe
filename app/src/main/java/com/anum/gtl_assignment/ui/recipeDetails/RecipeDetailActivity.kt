@@ -27,6 +27,7 @@ class RecipeDetailActivity : AppCompatActivity() {
     }
 
     private fun setupUI() {
+        //TODO: To be injected via Hilt
         val sectionsPagerAdapter =
             SectionsPagerAdapter(
                 supportFragmentManager, lifecycle,
