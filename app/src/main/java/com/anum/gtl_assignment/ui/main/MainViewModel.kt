@@ -25,16 +25,12 @@ class MainViewModel @Inject constructor(
     private var _recipes: MutableLiveData<Resource<Recipes>> = MutableLiveData()
     fun recipeListObservable(): LiveData<Resource<Recipes>> = _recipes
 
-    private var _searchString = MutableLiveData<String>()
-
     init {
         searchRecipe()
     }
 
     fun searchRecipe(search: String = "") {
-        _searchString.value = search
         try {
-
             viewModelScope.launch {
                 _recipes.value = recipeRepository.getRecipes(search, apiKey)
             }
